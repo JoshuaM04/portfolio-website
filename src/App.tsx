@@ -4,7 +4,7 @@ import Footer from './components/Footer.tsx'
 
 export default function App() {
   return (
-    <div className="bg-neutral min-h-dvh flex justify-center p-10">
+    <div className="bg-neutral min-h-dvh flex flex-col items-center p-10">
       <Header />
       <Main />
       <Footer />
