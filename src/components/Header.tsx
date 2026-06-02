@@ -1,15 +1,10 @@
-export default function Header() {
+function MobileHeader() {
     return (
-        <section className="flex flex-col gap-20 text-white h-min w-full">
+        <section className="flex flex-col gap-20 text-white h-min w-full lg:hidden lg:aria-hidden">
             <nav className="flex justify-between items-center">
-                <p className="text-2xl uppercase text-primary font-bold">Architect</p>
-                <button>
-                    <svg className="stroke-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
+                <div>
+                    <p className="text-2xl uppercase text-primary font-bold">Architect</p>
+                </div>
             </nav>
 
             <div className="flex flex-col gap-10">
@@ -30,5 +25,22 @@ export default function Header() {
 
             <hr className="border-solid border-gray-900" />
         </section>
+    )
+}
+
+function DesktopHeader() {
+    return (
+        <section className="max-lg: hidden max-lg:aria-hidden">
+
+        </section>
+    )
+}
+
+export default function Header() {
+    return (
+        <header>
+            <MobileHeader />
+            <DesktopHeader />
+        </header>
     )
 }

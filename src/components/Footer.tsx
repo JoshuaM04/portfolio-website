@@ -1,4 +1,4 @@
-export default function Footer() {
+function MobileFooter() {
     return (
         <section className="flex flex-col gap-20 w-full">
             <div className="text-center">
@@ -16,5 +16,13 @@ export default function Footer() {
                 </a>
             </div>
         </section>
+    )
+}
+
+export default function Footer() {
+    return (
+        <footer>
+            <MobileFooter />
+        </footer>
     )
 }
