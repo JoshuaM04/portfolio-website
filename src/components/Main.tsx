@@ -84,6 +84,8 @@ export default function Main() {
                     </div>
                 </div>
             </div>
+
+            <hr className="border-solid border-gray-900" />
         </section>
     )
 }
