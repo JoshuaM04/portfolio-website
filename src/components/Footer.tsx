@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <section className="flex flex-col gap-10 w-full">
+        <section className="flex flex-col gap-20 w-full">
             <div className="text-center">
                 <h2 className="text-2xl uppercase text-primary font-bold text-shadow-md text-shadow-primary/50">Architect</h2>
             </div>
