@@ -18,8 +18,8 @@ function MobileHeader() {
                 </div>
 
                 <div className="flex gap-5">
-                    <a className="bg-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-gray-700 font-medium shadow-md shadow-primary/50" href="">View Resume</a>
-                    <a className="border border-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-primary font-medium" href="mailto:johndoe@example.com">Contact</a>
+                    <a className="bg-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-gray-700 font-medium shadow-md shadow-primary/50" href="../pdf/Computer Science Resume.pdf" target="_blank">View Resume</a>
+                    <a className="border border-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-primary font-medium" href="mailto:joshmartinezny08@gmail.com">Contact</a>
                 </div>
             </div>
 

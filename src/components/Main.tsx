@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
 interface projectInformationInterface {
-    projectImage: string[];
-    projectNames: string[];
-    projectDescriptions: string[];
-    projectSource: string[];
-    projectWebsite: string[];
+    projectImage: Array<string>;
+    projectNames: Array<string>;
+    projectDescriptions: Array<string>;
+    projectSource: Array<string>;
+    projectWebsite: Array<string>;
 }
 
 interface functionProps {
