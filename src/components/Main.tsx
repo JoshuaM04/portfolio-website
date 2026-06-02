@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 export default function Main() {
     const skillSection = ["React", "State Management", "TypeScript", "CSS Architecture", "Tailwind CSS", "Responsive Design"]
     const projectInformation = {
-        projectImage: ["bg-[url(../images/LoopStudios.png)]", "bg-[url(../images/tipCalculator.png)]", "bg-[url(../images/contactForm.png)]", "bg-[url(../images/timeTrackingDashboard.png)]", "bg-[url(../images/newsHomepage.png)]", "bg-[url(../images/nftPreviewCardComponent.png)]"],
+        projectImage: ["../images/LoopStudios.png", "../images/tipCalculator.png", "../images/contactForm.png", "../images/timeTrackingDashboard.png", "../images/newsHomepage.png", "../images/nftPreviewCardComponent.png"],
         projectNames: ["LoopStudios Landing Page", "Tip Calculator App", "Contact Form", "Time Tracking Dashboard", "News Homepage", "NFT Preview Card Component"],
         projectDescriptions: [
             `An animation-driven landing page that showcases VR technology. Crafted with React to organize contents of the page into functional components, Tailwind CSS to enhance type-writer effects via the theme directive, and TypeScript
@@ -60,7 +60,8 @@ export default function Main() {
                 <h2 className="text-primary text-2xl font-semibold">Featured Build</h2>
                 
                 <div className="flex flex-col gap-10 border rounded-md border-gray-600 min-h-125 p-5">
-                    <div className={`img-container ${projectInformation.projectImage[index]} bg-top bg-cover bg-no-repeat min-h-[50vw] rounded-t-md -m-5`}>
+                    <div className={`img-container min-h-fit rounded-t-md -m-5`}>
+                        <img src={projectInformation.projectImage[index]} />
                     </div>
 
                     <div className="flex flex-col gap-5">
