@@ -9,9 +9,6 @@ export default function Footer() {
                 <a className="text-primary" href="">LinkedIn</a>
                 <a className="text-primary" href="https://www.frontendmentor.io/profile/JoshuaM04">FrontEnd Mentor</a>
             </div>
-            <div>
-                <p className="text-primary">Email: </p>
-            </div>
         </section>
     )
 }

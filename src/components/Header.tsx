@@ -3,11 +3,13 @@ export default function Header() {
         <section className="flex flex-col gap-20 text-white h-min w-full">
             <nav className="flex justify-between items-center">
                 <p className="text-2xl uppercase text-primary font-bold">Architect</p>
-                <svg className="stroke-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
+                <button>
+                    <svg className="stroke-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </nav>
 
             <div className="flex flex-col gap-10">
@@ -21,8 +23,8 @@ export default function Header() {
                 </div>
 
                 <div className="flex gap-5">
-                    <button className="bg-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-gray-700 font-medium shadow-md shadow-primary/50">View Work</button>
-                    <button className="border border-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-primary font-medium ">Contact</button>
+                    <a className="bg-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-gray-700 font-medium shadow-md shadow-primary/50" href="">View Resume</a>
+                    <a className="border border-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-primary font-medium" href="mailto:johndoe@example.com">Contact</a>
                 </div>
             </div>
 
