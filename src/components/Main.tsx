@@ -54,7 +54,7 @@ function MobileMain({skillSection, skillIcons, projectInformation, backgroundIma
                     <div className="flex gap-2">
                         <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][0]}</div>
                         <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][1]}</div>
-                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][2]}</div>
+                        <div style={{backgroundColor: projectTools[index][2] === "" ? "black" : "primary-skill", border: projectTools[index][2] === "" ? "black" : "cyan-500"}} key={index} className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][2]}</div>
                     </div>
 
                     <div className="flex">
@@ -109,7 +109,7 @@ export default function Main() {
                          "https://news-homepage-seven-sooty.vercel.app/", "https://nft-preview-card-component-delta-ten.vercel.app/"
         ]
     }
-    const projectTools = [["React", "TypeScript", "Tailwind CSS"], ["React", "JavaScript", "Tailwind CSS"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "Filler"], ["React", "TypeScript", "Tailwind CSS"]];
+    const projectTools = [["React", "TypeScript", "Tailwind CSS"], ["React", "JavaScript", "Tailwind CSS"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", ""], ["React", "TypeScript", "Tailwind CSS"]];
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
