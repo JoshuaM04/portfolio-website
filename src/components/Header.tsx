@@ -60,7 +60,7 @@ function DesktopHeader() {
                 <div className="flex flex-col gap-5 bg-slate-900 rounded-md border border-primary p-5 h-fit">
                     <p className="text-primary text-4xl font-bold">Hello.</p>
                     <p className="text-gray-400 text-sm">
-                        I engineer high-performance interfaces where precision meets aethestics. Specializing in React ecosystem and deep CSS architecture.
+                        I engineer high-performance interfaces where precision meets aethestics. Specializing in the React ecosystem and deep CSS architecture.
                     </p>
 
                     <div className="flex justify-between text-sm">
