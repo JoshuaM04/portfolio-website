@@ -12,10 +12,11 @@ interface functionProps {
     skillIcons: React.JSX.Element[];
     projectInformation: projectInformationInterface;
     backgroundImage: Array<string>;
+    projectTools: Array<Array<string>>;
     index: number;
 }
 
-function MobileMain({skillSection, skillIcons, projectInformation, backgroundImage, index}: functionProps) {
+function MobileMain({skillSection, skillIcons, projectInformation, backgroundImage, projectTools, index}: functionProps) {
     return (
         <section className="flex flex-col gap-20 w-full lg:hidden lg:aria-hidden">
             <div className="flex flex-col gap-10">
@@ -35,7 +36,7 @@ function MobileMain({skillSection, skillIcons, projectInformation, backgroundIma
             <hr className="border-solid border-gray-900" />
 
             <div className="flex flex-col gap-10">
-                <h2 className="text-primary text-2xl font-semibold">Featured Build</h2>
+                <h2 className="text-primary text-2xl font-semibold">Featured Builds</h2>
                 
                 <div className="flex flex-col gap-10 border rounded-md border-gray-600 min-h-125 p-5">
                     <div className={`img-container min-h-[35vw] bg-[url(../images/imageStrip.png)] ${backgroundImage[index]} bg-size-[600%_auto] bg-no-repeat rounded-t-md -m-5`}>
@@ -51,8 +52,9 @@ function MobileMain({skillSection, skillIcons, projectInformation, backgroundIma
                     </div>
 
                     <div className="flex gap-2">
-                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">React</div>
-                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">Tailwind CSS</div>
+                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][0]}</div>
+                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][1]}</div>
+                        <div className="React-Skill rounded-full min-w-20 bg-primary-skill border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-primary font-medium text-sm">{projectTools[index][2]}</div>
                     </div>
 
                     <div className="flex">
@@ -107,6 +109,7 @@ export default function Main() {
                          "https://news-homepage-seven-sooty.vercel.app/", "https://nft-preview-card-component-delta-ten.vercel.app/"
         ]
     }
+    const projectTools = [["React", "TypeScript", "Tailwind CSS"], ["React", "JavaScript", "Tailwind CSS"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "Filler"], ["React", "TypeScript", "Tailwind CSS"]];
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
@@ -129,6 +132,7 @@ export default function Main() {
                 skillIcons={skillIcons}
                 projectInformation={projectInformation}
                 backgroundImage={backgroundImage}
+                projectTools={projectTools}
                 index={index}
             />
         </main>
