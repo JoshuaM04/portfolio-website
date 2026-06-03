@@ -13,7 +13,7 @@ function MobileHeader() {
                         <svg className="fill-primary" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8Z"/></svg>
                         <p>Latest Build</p>
                     </div>   
-                    <img className="oject-cover rounded-lg" src="../../public/images/newsHomepage.png" />
+                    <img className="oject-cover rounded-lg" src="../images/newsHomepage.png" />
                     <div className="flex gap-5 absolute bottom-2 left-2">
                         <div className="React-Skill rounded-full min-w-20 bg-gray-900 border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-purple-300 font-medium text-xs w-fit">HTML5</div>
                         <div className="React-Skill rounded-full min-w-20 bg-gray-900 border border-cyan-500 text-center pt-1 pb-1 pl-4 pr-4 text-purple-300 font-medium text-xs w-fit">CSS3</div>
