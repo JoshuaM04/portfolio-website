@@ -33,12 +33,6 @@ function DesktopHeader() {
         <section className="max-lg:hidden max-lg:aria-hidden flex flex-col gap-20">
             <nav className="flex justify-between items-center gap-5 w-full">
                 <p className="text-2xl uppercase text-primary font-bold">Architect</p>
-                <div className="flex gap-5">
-                    <p className="text-gray-500 font-bold hover:text-primary hover:border-b-2 hover:border-b-primary">Home</p>
-                    <p className="text-gray-500 font-bold hover:text-primary hover:border-b-2 hover:border-b-primary">Projects</p>
-                    <p className="text-gray-500 font-bold hover:text-primary hover:border-b-2 hover:border-b-primary">Skills</p>
-                    <p className="text-gray-500 font-bold hover:text-primary hover:border-b-2 hover:border-b-primary">Contact</p>
-                </div>
                 <a className="bg-primary rounded-sm pl-5 pr-5 pt-2 pb-2 text-gray-700 font-medium shadow-md shadow-primary/50" href="../pdf/Computer Science Resume.pdf" target="_blank">Resume</a>
             </nav>
 
@@ -79,6 +73,10 @@ function DesktopHeader() {
                         <p className="text-primary">Location</p>
                         <p className="text-gray-400">San Marcos, TX</p>
                     </div>
+
+                    <hr />
+
+                    <a className="border border-primary rounded-sm w-fit pl-5 pr-5 pt-2 pb-2 text-primary font-medium" href="mailto:joshmartinezny08@gmail.com">Contact</a>
                 </div>
             </div>
         </section>

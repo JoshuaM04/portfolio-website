@@ -93,7 +93,7 @@ function DesktopMain({skillSection, skillIcons, projectInformation, backgroundIm
             </div>
 
             <div className="flex flex-col gap-5">
-                <div className="flex items-center gap-5">
+                <div id="projects-section" className="flex items-center gap-5">
                     <svg className="stroke-primary" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" color="currentColor"><path d="M11.57 21h-1.063c-4.01 0-6.015 0-7.261-1.546S2 15.42 2 10.444V7.22c0-1.917 0-2.876.324-3.595a2.94 2.94 0 0 1 .984-1.223C3.888 2 4.661 2 6.206 2c.99 0 1.485 0 1.918.202c.99.46 1.398 1.575 1.844 2.683l.539 1.337m-3.503 0h8.545c1.792 0 2.688 0 3.332.534c.278.23.518.528.704.874c.29.538.384 1.219.415 2.287"/><path d="M4.596 12.576c.43-1.15.647-1.724 1.067-2.085c.68-.582 1.657-.485 2.494-.485h9.095c2.477 0 3.716 0 4.334.797c1.06 1.368-.191 3.587-.695 4.93c-.904 2.408-1.356 3.612-2.256 4.346c-1.371 1.119-3.366.904-5.021.904H9.937c-3.543 0-5.314 0-6.236-1.096c-1.7-2.025.13-5.274.895-7.312"/></g></svg>
                     <h2 className="text-gray-300 text-xl">Featured Work</h2>
                 </div>
@@ -174,7 +174,7 @@ export default function Main() {
                 }
                 return prevIndex + 1;
             });
-        }, 3000)
+        }, 5000)
 
         return () => clearInterval(id);
     }, []);
