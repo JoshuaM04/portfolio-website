@@ -109,7 +109,7 @@ export default function Main() {
                          "https://news-homepage-seven-sooty.vercel.app/", "https://nft-preview-card-component-delta-ten.vercel.app/"
         ]
     }
-    const projectTools = [["React", "TypeScript", "Tailwind CSS"], ["React", "JavaScript", "Tailwind CSS"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", ""], ["React", "TypeScript", "Tailwind CSS"]];
+    const projectTools = [["React", "TypeScript", "Tailwind"], ["React", "JavaScript", "Tailwind"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", "JavaScript"], ["HTML5", "CSS3", ""], ["React", "TypeScript", "Tailwind"]];
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
