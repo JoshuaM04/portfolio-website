@@ -38,7 +38,7 @@ function MobileMain({skillSection, skillIcons, projectInformation, backgroundIma
                 <h2 className="text-primary text-2xl font-semibold">Featured Build</h2>
                 
                 <div className="flex flex-col gap-10 border rounded-md border-gray-600 min-h-125 p-5">
-                    <div className={`img-container min-h-50 bg-[url(../../images/imageStrip.png)] ${backgroundImage[index]} bg-size-[600%_200px] bg-no-repeat rounded-t-md -m-5`}>
+                    <div className={`img-container min-h-[35vw] bg-[url(../../images/imageStrip.png)] ${backgroundImage[index]} bg-size-[600%_auto] bg-no-repeat rounded-t-md -m-5`}>
                     </div>
 
                     <div className="flex flex-col gap-5">
